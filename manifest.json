@@ -1,0 +1,29 @@
+{
+    "description": "Override response Content-Type header based on URL",
+    "manifest_version": 2,
+    "name": "Override Content-Type",
+    "version": "1.0",
+    "homepage_url": "https://github.com/CrendKing/override-content-type",
+    "icons": {
+        "82": "icons/oct.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "override-content-type@CrendKing"
+        }
+    },
+    "permissions": [
+        "*://*/*",
+        "webRequest",
+		"webRequestBlocking",
+		"storage"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icons/oct.png",
+        "default_title": "Override Content-Type",
+        "default_popup": "popup.html"
+    }
+}
